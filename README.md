@@ -1,6 +1,6 @@
 # Financial Risk Analysis on NYSE Dataset
 ## **Problem Statement**
-> This project involves offering consultation services to two distinct investors, namely Mr Patrick Jyenger and Mr Peter Jyenger, tailoring our advice to align with their individual requirements and financial goals. While Mr Patrick Jyenger seeks low-risk investments with satisfactory returns, Mr Peter Jyenger is open to higher-risk stocks that offer potentially greater returns on investment.
+<p align="justify">This academic endeavor entails providing personalized consultation services to two separate investors, namely Mr. Patrick Jyenger and Mr. Peter Jyenger, catering to their distinct financial objectives and preferences. Mr. Patrick Jyenger is inclined towards low-risk investments with reasonable returns, while Mr. Peter Jyenger is open to higher-risk stocks offering potentially higher returns on investment. The analysis will involve data cleaning and exploratory data analysis, specifically delving into NYSE data of select highly profitable companies. Python will be utilized as the primary programming language to achieve these research objectives.</p>
 
 ## **<u>Steps performend</u>**
 1. Importing Necessary Libraries
