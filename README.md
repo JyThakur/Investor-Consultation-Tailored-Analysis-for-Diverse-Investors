@@ -1,4 +1,4 @@
-# Financial Risk Analysis on NYSE Dataset
+# Personalized Investment Consultation: Catering to Diverse Financial Goals using Exploratory Data Analysis
 ## **Problem Statement**
 <p align="justify">This academic endeavour entails providing personalized consultation services to two separate investors, namely Mr Patrick Jyenger and Mr Peter Jyenger, catering to their distinct financial objectives and preferences. Mr Patrick Jyenger is inclined towards low-risk investments with reasonable returns, while Mr Peter Jyenger is open to higher-risk stocks offering potentially higher returns on investment. The analysis will involve data cleaning and exploratory data analysis, specifically delving into NYSE data of select highly profitable companies. Python will be utilized as the primary programming language to achieve these research objectives.</p>
 
