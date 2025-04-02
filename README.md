@@ -1,33 +1,76 @@
-# Investor Consultation: Tailored Analysis for Diverse Investors using Exploratory Data Analysis
-## **Problem Statement**
-<p align="justify">This academic endeavour entails providing personalized consultation services to two separate investors, namely Mr Patrick Jyenger and Mr Peter Jyenger, catering to their distinct financial objectives and preferences. Mr Patrick Jyenger is inclined towards low-risk investments with reasonable returns, while Mr Peter Jyenger is open to higher-risk stocks offering potentially higher returns on investment. The analysis will involve data cleaning and exploratory data analysis, specifically delving into NYSE data of select highly profitable companies. Python will be utilized as the primary programming language to achieve these research objectives.</p>
+# NYSE Stock Analysis & Investment Recommendation System  
 
-## **<u>Steps performend</u>**
-1. Importing Necessary Libraries
-2. Importing, Cleaning and Understanding Dataset
-  * Importing Dataset (.csv file) to Dataframe
-    * Merging all files to create a final data frame
-    * Creating a pivot table for visualization
-    * Creating a new column to understand Day-to-Day changes in stocks
-  * Cleaning data frame
-    * Replacing all NULL/NA values with 0 (as for stock analysis each and every data row of data is important)
-    * Checking for abnormal data types in columns
-3. Visualization
-  * Visualizing stocks of different Industries using a Pair plot based on the Returns of each stock
-  * Visualization of stocks using Line Graph based on Return of stocks
-  * Visualizing distribution of stocks using Distribution plot based on Return from stocks
-  * Visualizing correlation between stocks using Heatmap Subplots based on Return
-  * Visualizing Trend Type of stocks using Candlestick
-    * Uptrend
-    * Downtrend
-    * Sideways Trend
-  * Visualizing data statistically based on the Returns of each stock
-4. Profiling
-  * Profile 1 -> Patrick
-    * Creating a new dataframe and finding Correlation between stocks using Heatmap
-    * Calculating cumulative return of the stocks selected for Patrick
-    * Statistical understanding based on Cumulative Returns of each stock selected for Patrick
-  * Profile 2 -> Peter
-    * Creating a new dataframe and finding Correlation between stocks using Heatmap for Peter
-    * Calculating cumulative return of the stocks selected for Peter
-    * Statistical understanding based on Cumulative Returns of each stock selected for Peter
+## Introduction  
+This project analyzes historical stock data from the **New York Stock Exchange (NYSE)** to provide tailored investment recommendations for two investor profiles:  
+- **Low-risk, moderate-return** (e.g., retirees like *Mr. Patrick Jyenger*).  
+- **High-risk, high-return** (e.g., aggressive investors like *Mr. Peter Jyenger*).  
+
+The dataset includes **25 stocks across 6 industries** (Technology, Finance, Aviation, Healthcare, Pharmaceuticals, and S&P500) from 2010–2021, covering metrics like daily prices, returns, and volatility.  
+
+---
+
+## Objective  
+1. **Analyze trends** in stock performance using time-series visualization (line plots, candlesticks).  
+2. **Evaluate risk-return trade-offs** via statistical metrics (coefficient of variation, standard deviation).  
+3. **Recommend optimized portfolios** based on correlation heatmaps and cumulative returns.  
+
+---
+
+## Steps Conducted  
+1. **Data Preparation**  
+   - Merged multiple CSV files into a unified dataframe.  
+   - Cleaned data (handled NULLs, normalized formats).  
+   - Calculated derived metrics: *Daily Returns*, *Cumulative Returns*, and *Coefficient of Variation*.  
+
+2. **Exploratory Analysis**  
+   - Visualized industry-wise trends using:  
+     - **Pair plots** for correlation.  
+     - **Heatmaps** for inter-stock relationships.  
+     - **Candlestick charts** for price trends (uptrend/downtrend).  
+
+3. **Statistical Profiling**  
+   - Ranked stocks by risk (std) and return (mean).  
+   - Identified outliers and pandemic-driven anomalies (2020–2021).  
+
+4. **Portfolio Construction**  
+   - **Patrick’s Portfolio (Low Risk)**: AAPL, AMZN, JNJ, UNH, LUV.  
+   - **Peter’s Portfolio (High Risk)**: AMZN, AAPL, FB, UNH, ALK.  
+
+5. **Validation**  
+   - Backtested portfolios using 5-year and 10-year cumulative returns.  
+
+---
+
+## Results  
+- **Patrick’s Portfolio**:  
+  - **10-Year Return**: ~12% (stable growth, low volatility).  
+  - Best performers: *AAPL* (Tech) and *UNH* (Healthcare).  
+
+- **Peter’s Portfolio**:  
+  - **10-Year Return**: ~18% (higher volatility, peaks in Tech stocks).  
+  - Top asset: *AMZN* (25% return).  
+
+**Key Insights**:  
+- Technology and Healthcare outperformed other sectors.  
+- Pharmaceuticals and IBM were consistently poor performers.  
+- Diversification reduced risk without sacrificing returns.  
+
+---
+
+## Conclusion  
+This project demonstrates how data-driven analysis can align investments with risk appetites. By leveraging correlation heatmaps and trend visualizations, we constructed portfolios that balance risk and return effectively.  
+
+---
+
+### Tools Used  
+- **Python Libraries**: Pandas, NumPy, Seaborn, Matplotlib, Plotly.  
+- **Visualization**: Pair plots, heatmaps, candlestick charts.  
+- **Statistical Metrics**: Coefficient of variation, standard deviation.  
+
+**Author**: Jay Thakur
+
+---
+
+Feel free to explore the code, tweak the model, and visualize the results further. Contributions and feedback are welcome!  
+
+---
